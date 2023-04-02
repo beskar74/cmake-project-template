@@ -20,8 +20,12 @@ The project:
   way. That means we are actually building two versions of each library: `libname-release.a` and `libname-debug.a`.
 - Adheres to [Google's C++ Style Guide](https://google.github.io/styleguide/cppguide.html). See `.clang-format`.
 
-To build your targets in `Debug` mode:
+To build all libraries at once:
+```bash
+$ sudo ./build.sh
+```
 
+To build your targets in `Debug` mode:
 ```bash
 $ mkdir build
 $ cd build
@@ -30,7 +34,6 @@ $ make
 ```
 
 To build your targets in `Release` mode:
-
 ```bash
 $ mkdir build_rel
 $ cd build_rel
