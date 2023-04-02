@@ -7,9 +7,9 @@ The project:
 - Statically links against minimal version of [Boost](https://www.boost.org/) with the most useful libraries. Feel free
   to change which libraries are built and linked in `build_boost.sh`.
 - Statically links against [HdrHistogram\_c](https://github.com/HdrHistogram/HdrHistogram_c).
-- Statically links against Google Benchmark and Google Test. We use the Google Test that Google Benchmark uses.
+- Statically links against [Google Benchmark](https://github.com/google/benchmark) and [Google Test](https://github.com/google/googletest). We use the Google Test that Google Benchmark uses.
   See `build_test.sh`.
-- Uses `clang++` and `C++20` for everything. It works out of the boox on both Linux and BSD systems.
+- Uses `clang++` and `C++20` for everything. It works out of the box on both Linux and BSD systems.
 - Provides an easy way to setup tests and benchmarks:
     - If you want to write a test for `file.cpp`, then create `file.test.cpp`, write your tests and then run them
       from `./build/src/test`. All project tests are run by `./build/src/test` that is built from `src/main.test.cpp`.
